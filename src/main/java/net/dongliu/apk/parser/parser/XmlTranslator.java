@@ -60,7 +60,7 @@ public class XmlTranslator implements XmlStreamer {
         if (namespace == null) {
             namespace = attribute.getNamespace();
         }
-        if (namespace != null && !namespace.isEmpty()) {
+        if (namespace != null && !namespace.isEmpty() && !namespace.startsWith("http")) {
             sb.append(namespace).append(':');
         }
         String escapedFinalValue = XmlEscaper.escapeXml10(attribute.getValue());
