@@ -219,6 +219,7 @@ public class ResourceTableParser {
                 libraryHeader.setCount(Buffers.readUInt(buffer));
                 Buffers.position(buffer, begin + headerSize);
                 return libraryHeader;
+            case ChunkType.TABLE_STAGED_ALIASE:
             case UNKNOWN_YET:
             case ChunkType.NULL:
                 Buffers.position(buffer, begin + headerSize);

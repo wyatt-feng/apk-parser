@@ -28,6 +28,7 @@ public class ChunkType {
     public static final int TABLE_PACKAGE = 0x0200;
     public static final int TABLE_TYPE = 0x0201;
     public static final int TABLE_TYPE_SPEC = 0x0202;
+    public static final int TABLE_STAGED_ALIASE = 0x0206;
     // android5.0+
     // DynamicRefTable
     public static final int TABLE_LIBRARY = 0x0203;
